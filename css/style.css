@@ -1,0 +1,418 @@
+/* 
+font-family: 'Syne Mono', monospace;
+font-family: 'Titillium Web', sans-serif;
+font-family: 'EB Garamond', serif;
+font-family: 'Titillium Web', sans-serif;
+ */
+
+*{
+  box-sizing: border-box;  
+}
+#header{
+   position: relative;
+}
+.navbar{
+    width: 20%;
+    position: fixed;
+    left: 20%;
+    font-family: 'Syne Mono', monospace;
+    background-color: black;
+    z-index: 111;
+   
+}
+.navbar .navbar-brand,#header .nav-link{
+    color: white;
+    padding-left: 12px;
+    transition: all .3s;
+}
+#header .nav-link:hover{
+    color:  rgb(204, 0, 95);
+}
+.custom-toggler.navbar-toggler { 
+    border: none;
+    outline: none;
+    
+}
+.custom-toggler .navbar-toggler-icon{
+    background-image: url( 
+  "data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgb(204, 0, 95)' stroke-width='3' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+  
+} 
+
+
+/* start intro */
+.intro{
+    background: url("../img/intro-bg.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    text-align: center;
+    color: white;
+    width: 100%;
+    height: 100%;
+    
+}
+.intro-overlay{
+    height: 100%;
+    width: 100%;
+    background-color: rgb(0, 0, 0, .7);
+    
+    
+
+    
+}
+.intro-content{
+    padding:10rem 3rem 15rem 3rem ;
+    display: flex;
+    width: 100%;
+    
+    font-family: 'Syne Mono', monospace;
+    flex-direction: column; 
+    justify-content: center; 
+}
+.intro-content span{
+    font-size: 1.5rem;
+    color: rgb(204, 0, 95);
+    
+}
+.intro-content h1{
+    font-family: 'Syne Mono', monospace;
+    text-transform: capitalize;
+    font-weight: bolder;
+}
+.intro-content p{
+    font-family: 'Syne Mono', monospace;
+    text-transform: uppercase;
+}
+a.button-prot{
+    border: 3px solid white;
+    color: white;
+    padding: 1rem 1rem;
+    text-decoration: none;
+    white-space: nowrap;
+    cursor: pointer;
+    width: fit-content;
+    margin: 10px 15px;
+    border-radius: 2px;
+    letter-spacing: .2rem;
+    text-transform: uppercase;
+    font-family: 'Oswald', sans-serif;
+    transition: all .5s ;
+}
+a.button-prot:hover{
+    border-color:  rgb(204, 0, 95);
+    color:  rgb(204, 0, 95);
+
+}
+.intro-media{
+    position: absolute;
+    bottom: 0px;
+}
+.e-media ul,#about  ul,.right-co ul{
+    padding: 0;
+}
+.e-media ul li,.right-co ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 10px;
+}
+.e-media ul li i,.right-co ul li i{
+    font-size: 1.5rem;
+}
+/* rgb(204, 0, 95); */
+/* start about */
+#about{
+    margin-top: 8rem;
+    margin-bottom: 8rem;
+}
+.bout-intro h3,.resume-intro h3,.protf-intro h3, .contact-intro h3{
+    font-family: 'Syne Mono', monospace;
+    color: #313131;
+
+}
+.bout-intro h4, .resume-intro h4,.protf-intro h4 , .contact-intro{
+    font-family: 'Syne Mono', monospace;
+
+    color: rgb(204, 0, 95);
+    text-transform: uppercase;
+    text-align: center
+}
+#about .img img{
+    height: 140px;
+    width: 160px;
+    border-radius: 50%;
+}
+.intro-tile, .intro-resume, .intro-portf , .intro-contact{
+    font-family:  'Syne Mono', monospace;
+    font-weight: bold;
+    color: #313131;
+}
+#about p ,#resume p ,#portfolio p, #contact p{
+    color: #8896AD;
+    line-height: 1.7rem;
+    font-size: 17px;
+}
+#about ul li{
+    list-style: none;
+    font-weight: lighter;
+    
+}
+.profile li strong{
+    margin: 20px 0 5px 0;
+    display: block;
+    width: 100%;
+}
+.skills-pro li{
+    height: 4rem;
+    
+    position: relative;
+}
+.skills-pro li strong{
+    position: absolute;
+    left: 0;
+    top: -1.2rem;
+    font-size: 1.1rem;
+    font-weight: 300;
+
+    
+    font-family: 'Titillium Web', sans-serif;
+    text-transform: uppercase;
+    color: #313131;
+    
+}
+.progress{
+   
+    overflow: visible;
+}
+.progress-bar {
+    position: relative;
+    overflow: visible;
+    
+
+}
+.progress-bar span{
+    position: absolute;
+    right: -10px;
+    top: -1.8rem;
+    background: rgb(0, 123, 255);
+    z-index: 99;
+    color: white;
+    font-size: 1rem;
+    font-weight: 400;
+    border: solid 1px rgb(0, 123, 255);
+    height: 15px;
+    padding: .6rem .3rem .6rem .3rem;
+    outline: none;
+    border-radius: 2px;
+
+}
+#about a.border-1{
+    border-color: #313131;
+    color: #313131;
+}
+#about a.border-1:hover{
+    border-color:  rgb(204, 0, 95);
+    color:  rgb(204, 0, 95);
+
+}
+
+/* start resume */
+#resume, #portfolio, #contact{
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+   
+}
+#resume{
+    background: #eee;
+}
+#resume .timeline-resume{
+    position: relative;
+}
+#resume .timeline-exp1{
+    padding-right: 4rem;
+
+    overflow: hidden;
+    
+    width: 35%;
+}
+#resume .timeline-exp2{
+    padding-left: 4rem ;
+    width: 65%;
+  
+}
+.line-time{
+    position: relative;
+    display: flex;
+}
+.line-time::before{
+    display: block;
+    content: "";
+    width: 2px;
+    height: 100%;
+    background-color: #8896AD;
+    position: absolute;
+    left: 35%;
+    top: 0;
+
+}
+.line-time .congrate{
+    position: absolute;
+    left: 35%;
+    top: 1rem;
+    background: #313131;
+    border-radius: 50%;
+    padding: .6rem;
+    margin-left: -1.2rem;
+}
+.line-time i{
+    color: white;
+}
+
+/* portfolio */
+.portfiolio{
+    position: relative;
+
+}
+.portfiolio-img  {
+    position: relative;
+    
+} 
+.portfiolio-img::before{
+    content: "";
+    display: table;
+
+}
+.portfiolio-img img{
+    width: 100%;
+}
+
+/* static */
+#static{
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+    background: #cc005f;
+    color: white;
+    text-align: center;
+}
+#static i{
+    font-size: 2.6rem;
+    color: #000;
+
+}
+#static .static-number {
+    font-family: 'Times New Roman', Times, serif;
+    padding: 1.1rem 0;
+    font-size: 2.8rem;
+    font-weight: bolder;
+}
+#static span{
+    font-family: 'Times New Roman', Times, serif;
+    color: rgba(255,255,255,0.5);
+}
+.stat-border{
+    border-left: 1px solid #6a7383;
+    padding-bottom: 1.5rem;
+    outline: none;
+}
+.border-0{
+    border: none;
+}
+
+/* contact */
+#contact {
+    background: #151515;
+}
+#contact p{
+    color:  rgba(255,255,255,0.5);
+}
+#contact input:focus{
+    outline: none;
+    
+}
+#contact input[type="text"],#contact input[type="email"],#contact textarea{
+    height: 3rem;
+    padding: 1.1rem 1.5rem;
+}
+#contact textarea{
+    height: 8rem;
+    
+}
+#contact input[type="text"],#contact input[type="email"],#contact textarea, #contact .btn{
+    border: none;
+    border-bottom: 1px solid rgba(255,255,255,0.5);
+    background-color: transparent;
+    outline: none;
+    width: 100%;
+
+}
+#contact input[type="text"]:focus,#contact input[type="email"]:focus,#contact textarea:focus{
+    border-color: #F07;
+    color: white;
+    
+}
+:focus{
+    outline: none;
+}
+#contact .btn{
+    border: 2px solid #F07;
+    background-color: #F07;
+    color: white;
+    margin-top: 2rem;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    font-weight: bolder;
+}
+#contact .btn:hover{
+    background-color: #ac0050;
+    border-color: #ac0050;
+}
+#contact i{
+    color: white;
+    font-size: 2.5rem;
+    margin-bottom: 25px;
+}
+#contact h6{
+    color: #cc005f;
+}
+.copyRight span{
+    color: #6a7383;
+    font-size: 1rem;
+}
+
+
+
+
+
+
+
+
+
+@media (max-width: 576px){
+     .navbar{
+         width: 100%;
+         left: 0;
+     }
+}
+@media (max-width: 768px){
+     .line-time{
+        display: block;
+        
+    }
+    #resume .timeline-exp1{
+        width: 100%;
+        padding-left: 4rem;
+        padding-right: 0;
+    }
+    #resume .timeline-exp2{
+        width: 100%;
+        padding-left: 4rem;
+       
+    }
+    .line-time::before,.line-time .congrate{
+        left: 1.4rem;
+    }
+    .stat-border{
+        border: none;
+    }
+}
